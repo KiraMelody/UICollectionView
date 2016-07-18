@@ -6,32 +6,34 @@ provides-nominal:
 provides-member:
 - ["C16UICollectionView14ViewController", ""]
 provides-dynamic-lookup:
-- "content"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
+- "content"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "numberOfSectionsInCollectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "CollectionViewCell"
-- !private "+"
-- !private "UIEdgeInsets"
-- "UICollectionView"
-- "Int"
-- !private "UIImage"
-- !private "UIColor"
 - "ViewController"
-- "NSIndexPath"
-- !private "UICollectionViewFlowLayout"
-- "UIViewController"
-- "UICollectionViewDelegateFlowLayout"
-- "StringLiteralType"
-- "UnicodeScalarType"
-- "UICollectionViewDataSource"
 - !private "CGSize"
-- "Array"
+- "Int"
+- "NSIndexPath"
+- !private "margins"
+- !private "CollectionViewCell"
+- !private "UICollectionViewFlowLayout"
 - "UICollectionViewCell"
+- "UICollectionView"
+- !private "UIImage"
+- "UICollectionViewDelegateFlowLayout"
+- "UnicodeScalarType"
+- !private "UIColor"
+- !private "myView"
+- "UICollectionViewDataSource"
+- !private "UIEdgeInsets"
+- "UIViewController"
+- !private "+"
+- "StringLiteralType"
+- "Array"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "CGSize"]
@@ -60,7 +62,10 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "itemSize"]
 - !private ["PSs9AnyObject", "layer"]
+- !private ["PSs9AnyObject", "layoutMarginsGuide"]
+- !private ["PSs9AnyObject", "margins"]
 - !private ["PSs9AnyObject", "minimumInteritemSpacing"]
+- !private ["PSs9AnyObject", "myView"]
 - ["PSs9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["PSs9AnyObject", "registerClass"]
 - !private ["PSs9AnyObject", "row"]
@@ -141,7 +146,10 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "itemSize"]
 - !private ["PSs11CVarArgType", "layer"]
+- !private ["PSs11CVarArgType", "layoutMarginsGuide"]
+- !private ["PSs11CVarArgType", "margins"]
 - !private ["PSs11CVarArgType", "minimumInteritemSpacing"]
+- !private ["PSs11CVarArgType", "myView"]
 - ["PSs11CVarArgType", "numberOfSectionsInCollectionView"]
 - !private ["PSs11CVarArgType", "registerClass"]
 - !private ["PSs11CVarArgType", "row"]
@@ -220,7 +228,10 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "itemSize"]
 - !private ["PSs23CustomStringConvertible", "layer"]
+- !private ["PSs23CustomStringConvertible", "layoutMarginsGuide"]
+- !private ["PSs23CustomStringConvertible", "margins"]
 - !private ["PSs23CustomStringConvertible", "minimumInteritemSpacing"]
+- !private ["PSs23CustomStringConvertible", "myView"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["PSs23CustomStringConvertible", "registerClass"]
 - !private ["PSs23CustomStringConvertible", "row"]
@@ -275,7 +286,10 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "itemSize"]
 - !private ["PSs9Equatable", "layer"]
+- !private ["PSs9Equatable", "layoutMarginsGuide"]
+- !private ["PSs9Equatable", "margins"]
 - !private ["PSs9Equatable", "minimumInteritemSpacing"]
+- !private ["PSs9Equatable", "myView"]
 - ["PSs9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["PSs9Equatable", "registerClass"]
 - !private ["PSs9Equatable", "row"]
@@ -333,7 +347,10 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "itemSize"]
 - !private ["PSs8Hashable", "layer"]
+- !private ["PSs8Hashable", "layoutMarginsGuide"]
+- !private ["PSs8Hashable", "margins"]
 - !private ["PSs8Hashable", "minimumInteritemSpacing"]
+- !private ["PSs8Hashable", "myView"]
 - ["PSs8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["PSs8Hashable", "registerClass"]
 - !private ["PSs8Hashable", "row"]
@@ -426,7 +443,10 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "itemSize"]
 - !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "layoutMarginsGuide"]
+- !private ["PSo8NSCoding", "margins"]
 - !private ["PSo8NSCoding", "minimumInteritemSpacing"]
+- !private ["PSo8NSCoding", "myView"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - !private ["PSo8NSCoding", "registerClass"]
 - !private ["PSo8NSCoding", "row"]
@@ -467,6 +487,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "margins"]
+- !private ["PSo26NSExtensionRequestHandling", "myView"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -516,7 +538,10 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "itemSize"]
 - !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "layoutMarginsGuide"]
+- !private ["CSo8NSObject", "margins"]
 - !private ["CSo8NSObject", "minimumInteritemSpacing"]
+- !private ["CSo8NSObject", "myView"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "registerClass"]
 - !private ["CSo8NSObject", "row"]
@@ -566,7 +591,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "itemSize"]
 - !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "layoutMarginsGuide"]
+- !private ["PSo16NSObjectProtocol", "margins"]
 - !private ["PSo16NSObjectProtocol", "minimumInteritemSpacing"]
+- !private ["PSo16NSObjectProtocol", "myView"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "registerClass"]
 - !private ["PSo16NSObjectProtocol", "row"]
@@ -637,6 +665,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "imageView"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "layoutMarginsGuide"]
 - !private ["PSo29UIAccessibilityIdentification", "registerClass"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
@@ -650,6 +679,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "imageView"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "layoutMarginsGuide"]
 - !private ["PSo12UIAppearance", "registerClass"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
@@ -674,6 +704,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "layoutMarginsGuide"]
+- !private ["PSo21UIAppearanceContainer", "margins"]
+- !private ["PSo21UIAppearanceContainer", "myView"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "registerClass"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
@@ -702,6 +735,7 @@ depends-member:
 - !private ["CSo16UICollectionView", "delegate"]
 - !private ["CSo16UICollectionView", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["CSo16UICollectionView", "init"]
+- !private ["CSo16UICollectionView", "layoutMarginsGuide"]
 - !private ["CSo16UICollectionView", "registerClass"]
 - !private ["CSo20UICollectionViewCell", "deinit"]
 - !private ["CSo20UICollectionViewCell", "imageView"]
@@ -717,6 +751,8 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - !private ["PSo26UICollectionViewDataSource", "content"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "margins"]
+- !private ["PSo26UICollectionViewDataSource", "myView"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
 - ["PSo26UICollectionViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo26UICollectionViewDataSource", "scrollViewDidEndDragging"]
@@ -743,6 +779,8 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "content"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "margins"]
+- !private ["PSo24UICollectionViewDelegate", "myView"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDragging"]
@@ -769,6 +807,8 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "content"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "margins"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "myView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSectionsInCollectionView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDecelerating"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDragging"]
@@ -808,6 +848,8 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "margins"]
+- !private ["PSo18UIContentContainer", "myView"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -835,6 +877,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "imageView"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "layoutMarginsGuide"]
 - !private ["PSo17UICoordinateSpace", "registerClass"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
@@ -848,6 +891,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "imageView"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "layoutMarginsGuide"]
 - !private ["PSo13UIDynamicItem", "registerClass"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
@@ -873,6 +917,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "layoutMarginsGuide"]
+- !private ["PSo18UIFocusEnvironment", "margins"]
+- !private ["PSo18UIFocusEnvironment", "myView"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "registerClass"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
@@ -920,6 +967,9 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "layoutMarginsGuide"]
+- !private ["CSo11UIResponder", "margins"]
+- !private ["CSo11UIResponder", "myView"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - !private ["CSo11UIResponder", "registerClass"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
@@ -944,6 +994,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["CSo12UIScrollView", "init"]
+- !private ["CSo12UIScrollView", "layoutMarginsGuide"]
 - !private ["CSo12UIScrollView", "registerClass"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
 - !private ["PSo20UIScrollViewDelegate", "CollectionViewCell"]
@@ -955,6 +1006,8 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "content"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "margins"]
+- !private ["PSo20UIScrollViewDelegate", "myView"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
@@ -983,6 +1036,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "margins"]
+- !private ["PSo16UIStateRestoring", "myView"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -1021,6 +1076,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "layoutMarginsGuide"]
+- !private ["PSo18UITraitEnvironment", "margins"]
+- !private ["PSo18UITraitEnvironment", "myView"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "registerClass"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
@@ -1051,6 +1109,7 @@ depends-member:
 - !private ["CSo6UIView", "imageView"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "layoutMarginsGuide"]
 - !private ["CSo6UIView", "registerClass"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
@@ -1069,6 +1128,8 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "margins"]
+- !private ["CSo16UIViewController", "myView"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
@@ -1109,6 +1170,8 @@ depends-member:
 - ["C16UICollectionView14ViewController", "didReceiveMemoryWarning"]
 - ["C16UICollectionView14ViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["C16UICollectionView14ViewController", "init"]
+- !private ["C16UICollectionView14ViewController", "margins"]
+- !private ["C16UICollectionView14ViewController", "myView"]
 - ["C16UICollectionView14ViewController", "numberOfSectionsInCollectionView"]
 - ["C16UICollectionView14ViewController", "scrollViewDidEndDecelerating"]
 - ["C16UICollectionView14ViewController", "scrollViewDidEndDragging"]
@@ -1182,6 +1245,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "imageView"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "layer"]
+- !private ["PSs12_Reflectable", "layoutMarginsGuide"]
 - !private ["PSs12_Reflectable", "registerClass"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
