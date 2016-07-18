@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "93c97ea86b9073c6f69ea5f8feaad8d8"
+build_time: [522145943, 234065000]
+inputs:
+  "/Users/apple/Developer/UICollectionView/UICollectionView/AppDelegate.swift": [463152758, 0]
+  "/Users/apple/Developer/UICollectionView/UICollectionView/ViewController.swift": [522145938, 0]
+  "/Users/apple/Developer/UICollectionView/UICollectionView/CollectionViewCell.swift": [522145597, 0]
