@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C16UICollectionView18CollectionViewCell", ""]
 provides-dynamic-lookup:
-- "imageView"
 - "textLabel"
+- "imageView"
 depends-top-level:
-- !private "UIViewContentMode"
-- !private "UIFont"
+- "CGRect"
+- !private "*"
 - "CollectionViewCell"
+- "UILabel"
 - !private "/"
 - "UICollectionViewCell"
-- !private "*"
-- "CGRect"
-- "NSCoder"
-- "UILabel"
+- !private "UIFont"
 - "UIImageView"
+- "NSCoder"
+- !private "UIViewContentMode"
 depends-member:
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "UIFont"]

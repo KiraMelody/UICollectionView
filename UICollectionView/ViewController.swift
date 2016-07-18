@@ -17,7 +17,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         // Do any additional setup after loading the view, typically from a nib.
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 100, left: 50, bottom: 50, right: 50)
-        layout.itemSize = CGSize(width: 90, height: 90)
+        layout.itemSize = CGSize(width: 60, height: 60)
         layout.minimumInteritemSpacing = 0.0;
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView!.dataSource = self
@@ -35,7 +35,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         return content.count;
     }
     
-    var content = ["啦啦啦","哈哈哈","呵呵呵","哦哦哦","嗯嗯嗯","呱呱呱"]
+    var content = ["啦啦啦","哈哈哈","呵呵呵","哦哦哦","嗯嗯嗯","呱呱呱","1","2","3","4"]
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as! CollectionViewCell
         //cell.backgroundColor = UIColor.grayColor()
