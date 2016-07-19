@@ -19,7 +19,6 @@
 		76858E3119B8A176006A446D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76858E3019B8A176006A446D /* Images.xcassets */; };
 		76858E3D19B8A176006A446D /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76858E3C19B8A176006A446D /* UICollectionViewTests.swift */; };
 		76858E4819B8A37E006A446D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76858E4619B8A37E006A446D /* CollectionViewCell.swift */; };
-		76858E4D19B8ABA9006A446D /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 76858E4C19B8ABA9006A446D /* circle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +48,6 @@
 		76858E3B19B8A176006A446D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76858E3C19B8A176006A446D /* UICollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		76858E4619B8A37E006A446D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		76858E4C19B8ABA9006A446D /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				18F851101D3CC70400B712C8 /* Unknown-1.png */,
-				76858E4C19B8ABA9006A446D /* circle.png */,
 				18F851121D3CC71100B712C8 /* Unknown-2.png */,
 				18F851131D3CC71100B712C8 /* Unknown-3.png */,
 				18F851141D3CC71100B712C8 /* Unknown-4.png */,
@@ -215,7 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76858E4D19B8ABA9006A446D /* circle.png in Resources */,
 				18F851171D3CC71100B712C8 /* Unknown-2.png in Resources */,
 				18F8511A1D3CC71100B712C8 /* Unknown-5.png in Resources */,
 				76858E2F19B8A176006A446D /* Main.storyboard in Resources */,

@@ -2,29 +2,36 @@
 //  ViewController.swift
 //  UICollectionView
 //
-//  Created by Brian Coleman on 2014-09-04.
-//  Copyright (c) 2014 Brian Coleman. All rights reserved.
+//  Created by TJQ on 16/7/18.
+//  Copyright © 2016年 KiraMelody. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
-    @IBOutlet var collectionView: UICollectionView?
+    var collectionView: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 100, left: 50, bottom: 50, right: 50)
-        layout.itemSize = CGSize(width: 60, height: 60)
-        layout.minimumInteritemSpacing = 0.0;
+        layout.itemSize = CGSize(width: 100, height: 100)
+        layout.minimumInteritemSpacing = 10.0;
+        layout.minimumLineSpacing = 100.0;
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        self.view.addSubview(collectionView!)
         collectionView!.dataSource = self
         collectionView!.delegate = self
         collectionView!.registerClass(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
         collectionView!.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(collectionView!)
+        let constraintCenterViewHeight = NSLayoutConstraint(item: collectionView!, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: 300)
+        let constraintCenterViewWidth = NSLayoutConstraint(item: collectionView!, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: 200)
+        let constraintCenterViewCenterX = NSLayoutConstraint(item: collectionView!, attribute: .CenterX, relatedBy: .Equal, toItem: view, attribute: .CenterX, multiplier: 1.0, constant: 200)
+        let constraintCenterViewCenterY = NSLayoutConstraint(item: collectionView!, attribute: .CenterY, relatedBy: .Equal, toItem: view, attribute: .CenterY, multiplier: 1.0, constant: 0)
+//        NSLayoutConstraint.activateConstraints([constraintCenterViewHeight, constraintCenterViewWidth, constraintCenterViewCenterX, constraintCenterViewCenterY])
+        view.addConstraints([constraintCenterViewHeight, constraintCenterViewWidth, constraintCenterViewCenterX, constraintCenterViewCenterY])
+
     }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -44,6 +51,23 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         cell.layer.cornerRadius = 8
         cell.textLabel?.text = "\(content[indexPath.row])"
         cell.imageView?.image = UIImage(named: "Unknown-\(indexPath.row+1).png")
+        
+        
+//        let constraintUsernameFieldVTop = NSLayoutConstraint(item: usernameField, attribute: .Top, relatedBy: .Equal, toItem: centerView, attribute: .Top, multiplier: 1.0, constant: 8)
+//        let constraintUsernameFieldHTrailing = NSLayoutConstraint(item: usernameField, attribute: .Trailing, relatedBy: .Equal, toItem: centerView, attribute: .Trailing, multiplier: 1.0, constant: -8)
+//        let constraintUsernameFieldVBottom = NSLayoutConstraint(item: usernameField, attribute: .Bottom, relatedBy: .Equal, toItem: passwordField, attribute: .Top, multiplier: 1.0, constant: 8)
+//        
+//        let constraintPasswordLabelHLeading = NSLayoutConstraint(item: passwordLabel, attribute: .Leading, relatedBy: .Equal, toItem: centerView, attribute: .Leading, multiplier: 1.0, constant: 8)
+//        let constraintPasswordLabelHTrailing = NSLayoutConstraint(item: passwordLabel, attribute: .Trailing, relatedBy: .Equal, toItem: passwordField, attribute: .Leading, multiplier: 1.0, constant: 8)
+//        let constraintPasswordLabelAlignBottom = NSLayoutConstraint(item: passwordLabel, attribute: .Bottom, relatedBy: .Equal, toItem: passwordField, attribute: .Bottom, multiplier: 1.0, constant: 0)
+//        
+//        let constraintPasswordFieldHTrailing = NSLayoutConstraint(item: passwordField, attribute: .Trailing, relatedBy: .Equal, toItem: centerView, attribute: .Trailing, multiplier: 1.0, constant: -8)
+//        
+//        centerView.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        usernameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        usernameField.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        passwordField.setTranslatesAutoresizingMaskIntoConstraints(false)
+//        passwordLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         return cell
     }
     

@@ -126,7 +126,7 @@ SWIFT_CLASS("_TtC16UICollectionView18CollectionViewCell")
 
 SWIFT_CLASS("_TtC16UICollectionView14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
-@property (nonatomic, strong) IBOutlet UICollectionView * __nullable collectionView;
+@property (nonatomic, strong) UICollectionView * __nullable collectionView;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * __nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * __nonnull)collectionView numberOfItemsInSection:(NSInteger)section;

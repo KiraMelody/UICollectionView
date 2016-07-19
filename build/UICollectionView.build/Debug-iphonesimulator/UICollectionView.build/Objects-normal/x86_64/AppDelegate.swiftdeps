@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C16UICollectionView11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
 - "application"
+- "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
-- "applicationWillTerminate"
-- "applicationDidBecomeActive"
 - "window"
+- "applicationDidBecomeActive"
 - "applicationWillResignActive"
+- "applicationWillTerminate"
 depends-top-level:
-- "AnyObject"
-- "UIResponder"
-- "UIWindow"
-- !private "BooleanLiteralType"
-- "Bool"
-- "NSObject"
 - "AppDelegate"
 - "UIApplicationDelegate"
+- "UIResponder"
+- "NSObject"
 - "UIApplication"
+- "Bool"
+- "UIWindow"
+- "AnyObject"
+- !private "BooleanLiteralType"
 depends-member:
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]

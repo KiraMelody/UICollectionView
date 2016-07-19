@@ -6,41 +6,45 @@ provides-nominal:
 provides-member:
 - ["C16UICollectionView14ViewController", ""]
 provides-dynamic-lookup:
+- "numberOfSectionsInCollectionView"
 - "content"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
-- "numberOfSectionsInCollectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 depends-top-level:
+- "Array"
+- !private "CGSize"
+- !private "NSLayoutConstraint"
 - !private "CollectionViewCell"
+- "ViewController"
 - !private "+"
-- !private "UIEdgeInsets"
 - "UICollectionView"
-- "Int"
+- !private "UICollectionViewFlowLayout"
+- "UICollectionViewCell"
+- "UIViewController"
+- "NSIndexPath"
+- "UnicodeScalarType"
 - !private "UIImage"
 - !private "UIColor"
-- "ViewController"
-- "NSIndexPath"
-- !private "UICollectionViewFlowLayout"
-- "UIViewController"
-- "UICollectionViewDelegateFlowLayout"
-- "StringLiteralType"
-- "UnicodeScalarType"
+- "Int"
+- !private "UIEdgeInsets"
 - "UICollectionViewDataSource"
-- !private "CGSize"
-- "Array"
-- "UICollectionViewCell"
+- "StringLiteralType"
+- "UICollectionViewDelegateFlowLayout"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "CGSize"]
 - !private ["PSs9AnyObject", "CollectionViewCell"]
+- !private ["PSs9AnyObject", "NSLayoutConstraint"]
 - !private ["PSs9AnyObject", "UICollectionView"]
 - !private ["PSs9AnyObject", "UICollectionViewFlowLayout"]
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIEdgeInsets"]
 - !private ["PSs9AnyObject", "UIImage"]
+- !private ["PSs9AnyObject", "activateConstraints"]
+- !private ["PSs9AnyObject", "addConstraints"]
 - !private ["PSs9AnyObject", "addSubview"]
 - !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "borderColor"]
@@ -61,6 +65,7 @@ depends-member:
 - !private ["PSs9AnyObject", "itemSize"]
 - !private ["PSs9AnyObject", "layer"]
 - !private ["PSs9AnyObject", "minimumInteritemSpacing"]
+- !private ["PSs9AnyObject", "minimumLineSpacing"]
 - ["PSs9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["PSs9AnyObject", "registerClass"]
 - !private ["PSs9AnyObject", "row"]
@@ -117,11 +122,14 @@ depends-member:
 - !private ["PSs11CVarArgType", "CollectionViewCell"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSLayoutConstraint"]
 - !private ["PSs11CVarArgType", "UICollectionView"]
 - !private ["PSs11CVarArgType", "UICollectionViewFlowLayout"]
 - !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIEdgeInsets"]
 - !private ["PSs11CVarArgType", "UIImage"]
+- !private ["PSs11CVarArgType", "activateConstraints"]
+- !private ["PSs11CVarArgType", "addConstraints"]
 - !private ["PSs11CVarArgType", "addSubview"]
 - !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "borderColor"]
@@ -142,6 +150,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "itemSize"]
 - !private ["PSs11CVarArgType", "layer"]
 - !private ["PSs11CVarArgType", "minimumInteritemSpacing"]
+- !private ["PSs11CVarArgType", "minimumLineSpacing"]
 - ["PSs11CVarArgType", "numberOfSectionsInCollectionView"]
 - !private ["PSs11CVarArgType", "registerClass"]
 - !private ["PSs11CVarArgType", "row"]
@@ -194,12 +203,15 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSLayoutConstraint"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UICollectionView"]
 - !private ["PSs23CustomStringConvertible", "UICollectionViewFlowLayout"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIEdgeInsets"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
+- !private ["PSs23CustomStringConvertible", "activateConstraints"]
+- !private ["PSs23CustomStringConvertible", "addConstraints"]
 - !private ["PSs23CustomStringConvertible", "addSubview"]
 - !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "borderColor"]
@@ -221,6 +233,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "itemSize"]
 - !private ["PSs23CustomStringConvertible", "layer"]
 - !private ["PSs23CustomStringConvertible", "minimumInteritemSpacing"]
+- !private ["PSs23CustomStringConvertible", "minimumLineSpacing"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["PSs23CustomStringConvertible", "registerClass"]
 - !private ["PSs23CustomStringConvertible", "row"]
@@ -248,14 +261,23 @@ depends-member:
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "CGColor"]
 - !private ["PSs9Equatable", "CGSize"]
+- !private ["PSs9Equatable", "CenterX"]
+- !private ["PSs9Equatable", "CenterY"]
 - !private ["PSs9Equatable", "CollectionViewCell"]
 - !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "Equal"]
+- !private ["PSs9Equatable", "Height"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSLayoutConstraint"]
+- !private ["PSs9Equatable", "NotAnAttribute"]
 - !private ["PSs9Equatable", "UICollectionView"]
 - !private ["PSs9Equatable", "UICollectionViewFlowLayout"]
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIEdgeInsets"]
 - !private ["PSs9Equatable", "UIImage"]
+- !private ["PSs9Equatable", "Width"]
+- !private ["PSs9Equatable", "activateConstraints"]
+- !private ["PSs9Equatable", "addConstraints"]
 - !private ["PSs9Equatable", "addSubview"]
 - !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "borderColor"]
@@ -276,6 +298,7 @@ depends-member:
 - !private ["PSs9Equatable", "itemSize"]
 - !private ["PSs9Equatable", "layer"]
 - !private ["PSs9Equatable", "minimumInteritemSpacing"]
+- !private ["PSs9Equatable", "minimumLineSpacing"]
 - ["PSs9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["PSs9Equatable", "registerClass"]
 - !private ["PSs9Equatable", "row"]
@@ -306,14 +329,23 @@ depends-member:
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "CGColor"]
 - !private ["PSs8Hashable", "CGSize"]
+- !private ["PSs8Hashable", "CenterX"]
+- !private ["PSs8Hashable", "CenterY"]
 - !private ["PSs8Hashable", "CollectionViewCell"]
 - !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "Equal"]
+- !private ["PSs8Hashable", "Height"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSLayoutConstraint"]
+- !private ["PSs8Hashable", "NotAnAttribute"]
 - !private ["PSs8Hashable", "UICollectionView"]
 - !private ["PSs8Hashable", "UICollectionViewFlowLayout"]
 - !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIEdgeInsets"]
 - !private ["PSs8Hashable", "UIImage"]
+- !private ["PSs8Hashable", "Width"]
+- !private ["PSs8Hashable", "activateConstraints"]
+- !private ["PSs8Hashable", "addConstraints"]
 - !private ["PSs8Hashable", "addSubview"]
 - !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "borderColor"]
@@ -334,6 +366,7 @@ depends-member:
 - !private ["PSs8Hashable", "itemSize"]
 - !private ["PSs8Hashable", "layer"]
 - !private ["PSs8Hashable", "minimumInteritemSpacing"]
+- !private ["PSs8Hashable", "minimumLineSpacing"]
 - ["PSs8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["PSs8Hashable", "registerClass"]
 - !private ["PSs8Hashable", "row"]
@@ -357,6 +390,7 @@ depends-member:
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
 - ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
@@ -402,11 +436,13 @@ depends-member:
 - !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGSize"]
 - !private ["PSo8NSCoding", "CollectionViewCell"]
+- !private ["PSo8NSCoding", "NSLayoutConstraint"]
 - !private ["PSo8NSCoding", "UICollectionView"]
 - !private ["PSo8NSCoding", "UICollectionViewFlowLayout"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIEdgeInsets"]
 - !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "addConstraints"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "borderColor"]
@@ -427,6 +463,7 @@ depends-member:
 - !private ["PSo8NSCoding", "itemSize"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "minimumInteritemSpacing"]
+- !private ["PSo8NSCoding", "minimumLineSpacing"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - !private ["PSo8NSCoding", "registerClass"]
 - !private ["PSo8NSCoding", "row"]
@@ -457,6 +494,7 @@ depends-member:
 - !private ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
 - !private ["PSo26NSExtensionRequestHandling", "CollectionViewCell"]
+- !private ["PSo26NSExtensionRequestHandling", "NSLayoutConstraint"]
 - !private ["PSo26NSExtensionRequestHandling", "UICollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "UICollectionViewFlowLayout"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
@@ -485,18 +523,29 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["OSC17NSLayoutAttribute", "CenterX"]
+- !private ["OSC17NSLayoutAttribute", "CenterY"]
+- !private ["OSC17NSLayoutAttribute", "Height"]
+- !private ["OSC17NSLayoutAttribute", "NotAnAttribute"]
+- !private ["OSC17NSLayoutAttribute", "Width"]
+- !private ["CSo18NSLayoutConstraint", "activateConstraints"]
+- !private ["CSo18NSLayoutConstraint", "init"]
+- !private ["OSC16NSLayoutRelation", "Equal"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "CGColor"]
 - !private ["CSo8NSObject", "CGSize"]
 - !private ["CSo8NSObject", "CollectionViewCell"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSLayoutConstraint"]
 - ["CSo8NSObject", "UICollectionView"]
 - ["CSo8NSObject", "UICollectionViewCell"]
 - !private ["CSo8NSObject", "UICollectionViewFlowLayout"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIEdgeInsets"]
 - !private ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "activateConstraints"]
+- !private ["CSo8NSObject", "addConstraints"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "borderColor"]
@@ -517,6 +566,7 @@ depends-member:
 - !private ["CSo8NSObject", "itemSize"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "minimumInteritemSpacing"]
+- !private ["CSo8NSObject", "minimumLineSpacing"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "registerClass"]
 - !private ["CSo8NSObject", "row"]
@@ -542,11 +592,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
 - !private ["PSo16NSObjectProtocol", "CollectionViewCell"]
+- !private ["PSo16NSObjectProtocol", "NSLayoutConstraint"]
 - !private ["PSo16NSObjectProtocol", "UICollectionView"]
 - !private ["PSo16NSObjectProtocol", "UICollectionViewFlowLayout"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsets"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "activateConstraints"]
+- !private ["PSo16NSObjectProtocol", "addConstraints"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
@@ -567,6 +620,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "itemSize"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "minimumInteritemSpacing"]
+- !private ["PSo16NSObjectProtocol", "minimumLineSpacing"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "registerClass"]
 - !private ["PSo16NSObjectProtocol", "row"]
@@ -606,6 +660,12 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "CenterX"]
+- !private ["PSs16RawRepresentable", "CenterY"]
+- !private ["PSs16RawRepresentable", "Equal"]
+- !private ["PSs16RawRepresentable", "Height"]
+- !private ["PSs16RawRepresentable", "NotAnAttribute"]
+- !private ["PSs16RawRepresentable", "Width"]
 - ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -627,6 +687,7 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "addConstraints"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
@@ -640,6 +701,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "registerClass"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
+- !private ["PSo12UIAppearance", "addConstraints"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "dataSource"]
@@ -655,11 +717,13 @@ depends-member:
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
 - !private ["PSo21UIAppearanceContainer", "CollectionViewCell"]
+- !private ["PSo21UIAppearanceContainer", "NSLayoutConstraint"]
 - !private ["PSo21UIAppearanceContainer", "UICollectionView"]
 - !private ["PSo21UIAppearanceContainer", "UICollectionViewFlowLayout"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsets"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "addConstraints"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
@@ -709,6 +773,7 @@ depends-member:
 - !private ["CSo20UICollectionViewCell", "textLabel"]
 - !private ["PSo26UICollectionViewDataSource", "CGSize"]
 - !private ["PSo26UICollectionViewDataSource", "CollectionViewCell"]
+- !private ["PSo26UICollectionViewDataSource", "NSLayoutConstraint"]
 - !private ["PSo26UICollectionViewDataSource", "UICollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "UICollectionViewFlowLayout"]
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
@@ -735,6 +800,7 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", ""]
 - !private ["PSo24UICollectionViewDelegate", "CGSize"]
 - !private ["PSo24UICollectionViewDelegate", "CollectionViewCell"]
+- !private ["PSo24UICollectionViewDelegate", "NSLayoutConstraint"]
 - !private ["PSo24UICollectionViewDelegate", "UICollectionView"]
 - !private ["PSo24UICollectionViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
@@ -761,6 +827,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", ""]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "CGSize"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "CollectionViewCell"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "NSLayoutConstraint"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UICollectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UICollectionViewFlowLayout"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
@@ -788,16 +855,19 @@ depends-member:
 - !private ["CSo26UICollectionViewFlowLayout", "init"]
 - !private ["CSo26UICollectionViewFlowLayout", "itemSize"]
 - !private ["CSo26UICollectionViewFlowLayout", "minimumInteritemSpacing"]
+- !private ["CSo26UICollectionViewFlowLayout", "minimumLineSpacing"]
 - !private ["CSo26UICollectionViewFlowLayout", "sectionInset"]
 - !private ["CSo22UICollectionViewLayout", "init"]
 - !private ["CSo22UICollectionViewLayout", "itemSize"]
 - !private ["CSo22UICollectionViewLayout", "minimumInteritemSpacing"]
+- !private ["CSo22UICollectionViewLayout", "minimumLineSpacing"]
 - !private ["CSo22UICollectionViewLayout", "sectionInset"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "grayColor"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CGSize"]
 - !private ["PSo18UIContentContainer", "CollectionViewCell"]
+- !private ["PSo18UIContentContainer", "NSLayoutConstraint"]
 - !private ["PSo18UIContentContainer", "UICollectionView"]
 - !private ["PSo18UIContentContainer", "UICollectionViewFlowLayout"]
 - !private ["PSo18UIContentContainer", "UIColor"]
@@ -825,6 +895,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "addConstraints"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
@@ -838,6 +909,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "registerClass"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
+- !private ["PSo13UIDynamicItem", "addConstraints"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
@@ -854,11 +926,13 @@ depends-member:
 - !private ["VSC12UIEdgeInsets", "init"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
 - !private ["PSo18UIFocusEnvironment", "CollectionViewCell"]
+- !private ["PSo18UIFocusEnvironment", "NSLayoutConstraint"]
 - !private ["PSo18UIFocusEnvironment", "UICollectionView"]
 - !private ["PSo18UIFocusEnvironment", "UICollectionViewFlowLayout"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsets"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "addConstraints"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
@@ -900,12 +974,14 @@ depends-member:
 - !private ["CSo11UIResponder", "CollectionViewCell"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSLayoutConstraint"]
 - ["CSo11UIResponder", "UICollectionView"]
 - ["CSo11UIResponder", "UICollectionViewCell"]
 - !private ["CSo11UIResponder", "UICollectionViewFlowLayout"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIEdgeInsets"]
 - !private ["CSo11UIResponder", "UIImage"]
+- !private ["CSo11UIResponder", "addConstraints"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "collectionView"]
@@ -947,6 +1023,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "registerClass"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
 - !private ["PSo20UIScrollViewDelegate", "CollectionViewCell"]
+- !private ["PSo20UIScrollViewDelegate", "NSLayoutConstraint"]
 - !private ["PSo20UIScrollViewDelegate", "UICollectionView"]
 - !private ["PSo20UIScrollViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
@@ -973,6 +1050,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGSize"]
 - !private ["PSo16UIStateRestoring", "CollectionViewCell"]
+- !private ["PSo16UIStateRestoring", "NSLayoutConstraint"]
 - !private ["PSo16UIStateRestoring", "UICollectionView"]
 - !private ["PSo16UIStateRestoring", "UICollectionViewFlowLayout"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -1002,11 +1080,13 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
 - !private ["PSo18UITraitEnvironment", "CollectionViewCell"]
+- !private ["PSo18UITraitEnvironment", "NSLayoutConstraint"]
 - !private ["PSo18UITraitEnvironment", "UICollectionView"]
 - !private ["PSo18UITraitEnvironment", "UICollectionViewFlowLayout"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsets"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "addConstraints"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "collectionView"]
@@ -1041,6 +1121,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addConstraints"]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "dataSource"]
@@ -1058,6 +1139,7 @@ depends-member:
 - !private ["CSo16UIViewController", "CollectionViewCell"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSLayoutConstraint"]
 - ["CSo16UIViewController", "UICollectionView"]
 - ["CSo16UIViewController", "UICollectionViewCell"]
 - !private ["CSo16UIViewController", "UICollectionViewFlowLayout"]
@@ -1097,6 +1179,7 @@ depends-member:
 - !private ["C16UICollectionView14ViewController", "CollectionViewCell"]
 - ["C16UICollectionView14ViewController", "Int"]
 - ["C16UICollectionView14ViewController", "NSIndexPath"]
+- !private ["C16UICollectionView14ViewController", "NSLayoutConstraint"]
 - ["C16UICollectionView14ViewController", "UICollectionView"]
 - ["C16UICollectionView14ViewController", "UICollectionViewCell"]
 - !private ["C16UICollectionView14ViewController", "UICollectionViewFlowLayout"]
@@ -1171,6 +1254,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "addConstraints"]
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "count"]
@@ -1216,6 +1300,7 @@ depends-nominal:
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
+- !private "SQ"
 - "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
@@ -1234,6 +1319,9 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "OSC17NSLayoutAttribute"
+- !private "CSo18NSLayoutConstraint"
+- !private "OSC16NSLayoutRelation"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -1243,6 +1331,7 @@ depends-nominal:
 - !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
 - "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
 - "PSs12SequenceType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
@@ -1315,4 +1404,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "c416e30a7a70e267d1184b009e78fe5d"
+interface-hash: "716cedfbfaefb523522ab23d825be7ed"

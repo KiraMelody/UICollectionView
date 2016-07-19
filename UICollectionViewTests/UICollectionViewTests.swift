@@ -2,8 +2,8 @@
 //  UICollectionViewTests.swift
 //  UICollectionViewTests
 //
-//  Created by Brian Coleman on 2014-09-04.
-//  Copyright (c) 2014 Brian Coleman. All rights reserved.
+//  Created by TJQ on 16/7/18.
+//  Copyright © 2016年 KiraMelody. All rights reserved.
 //
 
 import UIKit
