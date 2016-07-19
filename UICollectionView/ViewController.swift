@@ -45,7 +45,23 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     var content = ["啦啦啦","哈哈哈","呵呵呵","哦哦哦","嗯嗯嗯","呱呱呱","1","2","3","4"]
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as! CollectionViewCell
-        //cell.backgroundColor = UIColor.grayColor()
+
+        // Get the superview's layout
+        if #available(iOS 9.0, *) {
+            let margins = collectionView.layoutMarginsGuide
+            
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        // Pin the leading edge of myView to the margin's leading edge
+        myView.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor).active = true
+        
+        // Pin the trailing edge of myView to the margin's trailing edge
+        myView.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor).active = true
+        
+        // Give myView a 1:2 aspect ratio
+        myView.heightAnchor.constraintEqualToAnchor(myView.widthAnchor, multiplier: 2.0)
         cell.layer.borderColor = UIColor.grayColor().CGColor
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 8

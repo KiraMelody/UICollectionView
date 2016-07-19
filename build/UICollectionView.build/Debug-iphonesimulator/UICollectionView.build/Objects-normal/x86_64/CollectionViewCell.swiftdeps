@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 - "textLabel"
 - "imageView"
 depends-top-level:
+<<<<<<< HEAD
 - "CGRect"
 - "NSCoder"
 - "UILabel"
@@ -17,6 +18,16 @@ depends-top-level:
 - !private "UIViewContentMode"
 - "CollectionViewCell"
 - "UIImageView"
+=======
+- "CollectionViewCell"
+- !private "/"
+- !private "*"
+- "UIImageView"
+- "UILabel"
+- !private "UIViewContentMode"
+- "CGRect"
+- "NSCoder"
+>>>>>>> origin/master
 - "UICollectionViewCell"
 - !private "UIFont"
 depends-member:
