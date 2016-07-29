@@ -1,15 +1,7 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "93c97ea86b9073c6f69ea5f8feaad8d8"
-<<<<<<< HEAD
-build_time: [522210087, 245861000]
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "f4e5d0d8cad611f17224858581f54f3c"
+build_time: [522920219, 5766000]
 inputs:
-  "/Users/apple/Developer/UICollectionView/UICollectionView/CollectionViewCell.swift": [522210085, 0]
-  "/Users/apple/Developer/UICollectionView/UICollectionView/AppDelegate.swift": [522209032, 0]
-  "/Users/apple/Developer/UICollectionView/UICollectionView/ViewController.swift": [522210086, 0]
-=======
-build_time: [522165742, 639865000]
-inputs:
-  "/Users/apple/Developer/UICollectionView/UICollectionView/CollectionViewCell.swift": [522165734, 0]
-  "/Users/apple/Developer/UICollectionView/UICollectionView/AppDelegate.swift": [522165724, 0]
-  "/Users/apple/Developer/UICollectionView/UICollectionView/ViewController.swift": !private [522165730, 0]
->>>>>>> origin/master
+  "/Users/apple/Developer/UICollectionView/UICollectionView/ViewController.swift": [522212780, 0]
+  "/Users/apple/Developer/UICollectionView/UICollectionView/AppDelegate.swift": [522210297, 0]
+  "/Users/apple/Developer/UICollectionView/UICollectionView/CollectionViewCell.swift": [522225299, 0]
